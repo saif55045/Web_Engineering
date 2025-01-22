@@ -1,0 +1,91 @@
+/* universal selector */
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* element selector */
+h1,h3{
+    color: #b92b27;
+}
+#login{
+    background-color: white;
+}
+/* id selector */
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+/* class selector */
+.upvote{
+    background-color: green;
+    color: white;
+}
+/* div[id="myid"] p OR */
+#myid p{
+    color: green;
+}
+.post a{
+    background-color: yellow;
+    color: purple;
+}
+nav ul li {
+    color: blue;
+}
+/* decendent selector we can skip also the mediatory decendents like this nav a.it also work*/
+nav ul li a{
+    color: hotpink;
+}
+/* adjacent sibling combinator */
+p + h3{
+    text-decoration: underline;
+}
+.upvote + button{
+    background-color: blue;
+    color: white;
+}
+/* child combinator only work on the direct childs . it work div>input but not for nav > a */
+div>input{
+    background-color: #0cfcd4;
+}
+/* attribute selector : select element on the basis of attribute */
+input[type="text"]{
+    color: blue;
+}
+/* [attr=value] */
+input[type="password"]{
+    color:yellow;
+}
+/* [attr]
+input[placeholder]{
+    color:yellow;
+} */
+button:hover{
+    background-color: black;
+    color: yellow;      
+    
+}
+/* psuedo classes mdn */
+h3:hover{
+    text-decoration: none;
+}
+button:active{
+    background-color: coral;
+}
+input[type="radio"]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+/* (1) means first div in parent tag only 2n means every 2th will Apply changes */
+div:nth-of-type(2){
+    background-color: antiquewhite;
+}
+/* pseudo element for changing within the element */
+/* #myid ::first-letter{
+    color: red;
+} */
+#myid p::first-line{
+    color: #b92b27;
+}
+#myid p::selection{
+    background-color: yellow;
+    color: black;
+}
