@@ -1,0 +1,16 @@
+#navigation{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    /* padding-top: 10px; */
+    list-style-type: none;
+    background-color: bisque;
+    margin-top: 0px;
+    height: 40px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+#navigation a{
+    text-decoration: none;
+    color: blue;
+}

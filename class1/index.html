@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul id="navigation">
+            <li class="nav">Home</li>
+            <li calss="nav"><a href="#form">About Me</a></li>
+            <li class="nav"><a href="#fav_movie">Favorite Movie</a></li>
+            <li class="nav"><a href="#audio_lib">Digital Library</a></li>
+            <li class="nav"><a href="#skills">Skils</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="form">
+            <label for="saysome">Say Something About Me!</label><br>
+            <textarea name="textarea" id="saysome" cols="30" rows="10"></textarea>
+            <form action="/server">
+                <label for="name">Enter Name : </label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="email">Enter Email : </label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="phone">Enter Phone Number : </label><br>
+                <input type="tel" name="phone" id="phone"><br>
+                <label for="message">Message</label><br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+                <input type="submit" id="submit">
+            </form>
+        </section>
+        <div id="fav_movie">
+            <h3>Favorite Movie Trailer</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G62HrubdD6o?si=7_RIobNPQLZ1pgLD"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="audio_lib">
+
+            <h3>Digital Library Tracks</h3>
+            <audio controls>
+                <source src="abhi mujh ma kahin.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </div>
+        <div id="skills">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Programming Languages
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>C++</li>
+                    </ul>
+                </li>
+                <li>Web Development
+                    <ul>
+                        <li>HTML, CSS</li>
+                        <li>React, Angular</li>
+                        <li>Node.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy 2025 Demo Project. All rights Reserved</p>
+    </footer>
+</body>
+
+</html>
